@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/plantCustomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Scanned bar code"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btnScan_bar_code"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="15dp"
+            android:textColor="@color/white"
+            android:text="SCAN" />
+
+        <Button
+            android:id="@+id/btnAdd_bar_code"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/etDisplay_Bar_Code"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnScan_bar_code"
+            android:hint="Type/Scan bar code"
+            android:inputType="text"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_line_layout"/>
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/btnAdd_bar_code"
+        android:background="@color/white" />
+
+    <!-- ListView -->
+    <ListView
+        android:id="@+id/lvQRCode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnAdd_bar_code"
+        android:divider="@color/greyLine"
+        android:dividerHeight="0.5px"
+        android:padding="15dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

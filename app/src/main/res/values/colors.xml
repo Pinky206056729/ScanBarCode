@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="applicationBackgroundColor">#efeff0</color>
+    <color name="borderColor">#9a9799</color>
+    <color name="headerColor">#9a9799</color>
+    <color name="buttonColor">#545759</color>
+    <color name="cardHeaderColor">#444749</color>
+    <color name="cardContentColor">#9a9799</color>
+    <color name="editTextBackgroundColor">#ffffff</color>
+    <color name="editTextMandatoryColor">#fff4cc</color>
+    <color name="greyLine">#8e837a</color>
+    <color name="buttonDisabled">#545759</color>
+    <color name="headerBarColor">#545759</color>
+    <color name="summary_grey_color">#9f968c</color>
+</resources>
